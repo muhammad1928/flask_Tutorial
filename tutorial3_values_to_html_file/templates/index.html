@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flask app tutorial 2</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p> {{ myValue}} </p>
+    <p> {{ myResult }} </p>
+
+    <!-- Looping through passed list from app.py -->
+    <ul>
+        {% for item in myList %}
+            <li> {{ item }} </li>
+        {% endfor %}
+    </ul>
+    <p>{{ myList}}</p>
+</body>
+</html>
