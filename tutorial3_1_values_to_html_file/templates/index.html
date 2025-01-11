@@ -17,5 +17,14 @@
         {% endfor %}
     </ul>
     <p>{{ myList}}</p>
+
+    <!-- lets add a condition -->
+    {% for item in myList%}
+        {% if item == 3 %}
+            <p style="color:red"> {{ item }} is my favorite number </p>
+        {% else %}
+            <p> {{ item }} is not my favorite number </p>
+        {% endif %}
+    {% endfor %}
 </body>
 </html>
